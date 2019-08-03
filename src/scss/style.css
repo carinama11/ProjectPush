@@ -1,0 +1,1809 @@
+@import url("./_animation.scss");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+@font-face {
+  font-family: burbank;
+  src: url(./BurbankBigCondensed-Bold.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  font-family: burbank;
+}
+
+.link {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.banner-navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  font-family: burbank;
+  letter-spacing: 2px;
+}
+
+.banner-navbar .banner-icon {
+  font-size: 2.4rem;
+  color: #e7e7e7;
+  width: 20%;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+}
+
+.banner-navbar .banner-icon h2 {
+  margin-top: .7rem;
+}
+
+.banner-navbar .navbar-list {
+  width: 50rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+}
+
+.banner-navbar .navbar-list li {
+  list-style-type: none;
+  margin: 0 2rem;
+  color: #e7e7e7;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.banner-navbar .navbar-list li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.banner-navbar .navbar-list .fortnite-wrapper {
+  width: 18rem;
+  min-width: 18rem;
+  height: 100%;
+  text-decoration: none;
+}
+
+.banner-navbar .navbar-list .fortnite-wrapper .play-fortnite {
+  margin: 0;
+  min-width: 18rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#fbff4a), to(#ecff00));
+  background: linear-gradient(90deg, #fbff4a 0%, #ecff00 100%);
+  color: black;
+}
+
+.banner-navbar .navbar-list .fortnite-wrapper .play-fortnite:hover {
+  cursor: pointer;
+  background: yellow;
+  color: black;
+}
+
+.banner-container {
+  width: 100%;
+}
+
+.banner-container .banner-image {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  background-image: url("https://cdn2.unrealengine.com/Fortnite%2Fbattle-royale%2F09BP_Web_GetFornitePage_3UPMain-1920x1000-f8c6eabdf58b43b779e5762693908748572e6cb0.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-container .banner-image .banner-btn-get-started {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  width: 38rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: yellow;
+  font-size: 2rem;
+  border-radius: 2%;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 0rem .5rem 2rem .1rem black;
+          box-shadow: 0rem .5rem 2rem .1rem black;
+}
+
+.banner-container .banner-image .banner-btn-get-started h1 {
+  margin-top: 3%;
+}
+
+.banner-container .banner-image .banner-btn-get-started:hover {
+  cursor: pointer;
+}
+
+.banner-container .banner-image .banner-btn-secret-shop {
+  width: 40rem;
+  height: 12rem;
+  -webkit-transform: translate(-100%, 50%);
+          transform: translate(-100%, 50%);
+  position: absolute;
+  bottom: 0;
+  left: 49.9%;
+  font-size: 2.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#abc3e8), color-stop(65%, #0052ff));
+  background: linear-gradient(90deg, #abc3e8 0%, #0052ff 65%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: -.5rem .5rem 2rem .2rem black;
+          box-shadow: -.5rem .5rem 2rem .2rem black;
+}
+
+.banner-container .banner-image .banner-btn-secret-shop:hover {
+  cursor: pointer;
+}
+
+.banner-container .banner-image .banner-btn-secret-shop h1 {
+  margin-top: 3%;
+}
+
+.banner-container .banner-image .banner-btn-weapon-stats {
+  width: 40rem;
+  height: 12rem;
+  -webkit-transform: translate(0%, 50%);
+          transform: translate(0%, 50%);
+  position: absolute;
+  bottom: 0;
+  font-size: 2.5rem;
+  left: 50.1%;
+  background: -webkit-gradient(linear, right top, left top, from(#e4e8ab), to(#fbff00));
+  background: linear-gradient(to left, #e4e8ab 0%, #fbff00 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: .5rem .5rem 2rem .2rem black;
+          box-shadow: .5rem .5rem 2rem .2rem black;
+}
+
+.banner-container .banner-image .banner-btn-weapon-stats:hover {
+  cursor: pointer;
+}
+
+.banner-container .banner-image .banner-btn-weapon-stats h1 {
+  margin-top: 3%;
+}
+
+.home {
+  width: 100%;
+  font-family: burbank, sans-serif;
+  letter-spacing: 2px;
+}
+
+.home .body-main-content {
+  margin-top: 14rem;
+  width: 100%;
+  min-height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .body-main-content .main-content-text {
+  width: 70rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+.home .body-main-content .main-content-text h1 {
+  font-size: 8rem;
+  color: #008cff;
+  letter-spacing: 6px;
+}
+
+.home .body-main-content .main-content-text p {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home .body-main-content .main-content-text p span {
+  color: blue;
+  font-weight: bold;
+}
+
+.home .body-main-content .main-content-text p span a {
+  text-decoration: none;
+}
+
+.home .body-main-content .main-content-text p span a:visited {
+  color: blue;
+}
+
+.home .body-main-content .main-content-coursel {
+  position: relative;
+  width: 110rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.home .body-main-content .main-content-coursel .button-right {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  right: 1%;
+  position: absolute;
+}
+
+.home .body-main-content .main-content-coursel .button-left {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  left: 1%;
+  position: absolute;
+}
+
+.home .body-main-content .main-content-coursel .icon {
+  color: #008cff;
+}
+
+.home .body-main-content .main-content-coursel .icon:hover {
+  cursor: pointer;
+  color: #003cff;
+}
+
+.home .body-main-content .main-content-coursel .icon__left {
+  width: 5rem;
+  height: 5rem;
+}
+
+.home .body-main-content .main-content-coursel .icon__right {
+  width: 5rem;
+  height: 5rem;
+}
+
+.home .body-main-content .main-content-coursel .coursel-container {
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.home .body-main-content .main-content-coursel .coursel-container .coursel-slider {
+  width: 100%;
+  height: 54rem;
+  margin: 0 auto;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -ms-grid-columns: (100%)[6];
+      grid-template-columns: repeat(6, 100%);
+}
+
+.home .body-main-content .main-content-coursel .coursel-container .coursel-slider .coursel-image {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .body-main-content .main-content-coursel .coursel-container .coursel-slider .coursel-image h1 {
+  margin-top: 1rem;
+  font-size: 4em;
+  color: white;
+}
+
+.home .body-main-content .main-content-coursel .coursel-container .coursel-slider .coursel-image__1 {
+  background: url("https://cdn2.unrealengine.com/Fortnite%2Fbattle-royale%2Ffortnite-sniper-1920x1080-f072fcef414cbe680e369a16a8d059d8a01c7636.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home .body-main-content .main-content-coursel .coursel-container .coursel-slider .coursel-image__2 {
+  background: url("https://cdn2.unrealengine.com/Fortnite%2Fbattle-royale%2Ffortnite-battleroyaleapproved-1920x1080-70139076a5efcf08da47c9bbbb824ebc5a10310e.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home .body-main-content .main-content-coursel .coursel-container .coursel-slider .coursel-image__3 {
+  background-image: url(https://cdn2.unrealengine.com/Fortnite%2FCreativeMode%2FcreativeMode-1920x1080-a1dce90f226f2234dbdb524a122db63f2342165e.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .body-main-content .main-content-coursel .coursel-dot-slider {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  height: 8rem;
+  bottom: -8rem;
+}
+
+.home .body-main-content .main-content-coursel .coursel-dot-slider .icon {
+  width: 2.1rem;
+  height: 2.1rem;
+  opacity: .4;
+  list-style-type: none;
+}
+
+.home .body-main-content .main-content-coursel .coursel-dot-slider .circle-active {
+  opacity: 1;
+}
+
+.Weapons,
+.home,
+.item-shop-container {
+  font-family: burbank, sans-serif;
+}
+
+.Weapons .mobile-navigation,
+.home .mobile-navigation,
+.item-shop-container .mobile-navigation {
+  display: none;
+}
+
+.Weapons .mobile-cat-selector,
+.home .mobile-cat-selector,
+.item-shop-container .mobile-cat-selector {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: gray;
+  z-index: 2;
+  display: none;
+}
+
+.Weapons .mobile-cat-selector .navigation-bar,
+.home .mobile-cat-selector .navigation-bar,
+.item-shop-container .mobile-cat-selector .navigation-bar {
+  width: 100%;
+  height: 5rem;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Weapons .mobile-cat-selector .navigation-bar .close-button,
+.home .mobile-cat-selector .navigation-bar .close-button,
+.item-shop-container .mobile-cat-selector .navigation-bar .close-button {
+  margin-right: 1rem;
+  margin-top: 5px;
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+}
+
+.Weapons .mobile-cat-selector .mobile-weapon-navigation-container,
+.home .mobile-cat-selector .mobile-weapon-navigation-container,
+.item-shop-container .mobile-cat-selector .mobile-weapon-navigation-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Weapons .mobile-cat-selector .mobile-weapon-navigation-container li,
+.home .mobile-cat-selector .mobile-weapon-navigation-container li,
+.item-shop-container .mobile-cat-selector .mobile-weapon-navigation-container li {
+  position: relative;
+  width: 100%;
+  height: 14rem;
+}
+
+.Weapons .mobile-cat-selector .mobile-weapon-navigation-container li .link,
+.home .mobile-cat-selector .mobile-weapon-navigation-container li .link,
+.item-shop-container .mobile-cat-selector .mobile-weapon-navigation-container li .link {
+  font-size: 3rem;
+  color: black;
+}
+
+.Weapons .mobile-cat-selector .mobile-weapon-navigation-container li .link h2,
+.home .mobile-cat-selector .mobile-weapon-navigation-container li .link h2,
+.item-shop-container .mobile-cat-selector .mobile-weapon-navigation-container li .link h2 {
+  float: left;
+  margin: 1rem 0 0 1rem;
+}
+
+.Weapons .mobile-cat-selector .mobile-weapon-navigation-container li .link .home-mobile-nav,
+.home .mobile-cat-selector .mobile-weapon-navigation-container li .link .home-mobile-nav,
+.item-shop-container .mobile-cat-selector .mobile-weapon-navigation-container li .link .home-mobile-nav {
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fad551), to(#fcac19));
+  background: linear-gradient(to top, #fad551 0%, #fcac19 100%);
+}
+
+.Weapons .mobile-cat-selector .mobile-weapon-navigation-container li .link .home-mobile-nav::before,
+.home .mobile-cat-selector .mobile-weapon-navigation-container li .link .home-mobile-nav::before,
+.item-shop-container .mobile-cat-selector .mobile-weapon-navigation-container li .link .home-mobile-nav::before {
+  content: '';
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  background: url("https://fortnite-public-files.theapinetwork.com/outfit/5b0a79359f5aea11b7eb81e5ce995a10.png") no-repeat 0 0;
+  background-size: cover;
+  background-position: -1rem;
+  right: 0;
+}
+
+.Weapons .mobile-cat-selector .mobile-weapon-navigation-container li .link .shop-mobile-nav,
+.home .mobile-cat-selector .mobile-weapon-navigation-container li .link .shop-mobile-nav,
+.item-shop-container .mobile-cat-selector .mobile-weapon-navigation-container li .link .shop-mobile-nav {
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#11c6e2), to(#0470dc));
+  background: linear-gradient(to top, #11c6e2 0%, #0470dc 100%);
+}
+
+.Weapons .mobile-cat-selector .mobile-weapon-navigation-container li .link .shop-mobile-nav::before,
+.home .mobile-cat-selector .mobile-weapon-navigation-container li .link .shop-mobile-nav::before,
+.item-shop-container .mobile-cat-selector .mobile-weapon-navigation-container li .link .shop-mobile-nav::before {
+  content: '';
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  position: absolute;
+  width: 28rem;
+  height: 14rem;
+  background: url("../pict/Character/Home.png") no-repeat 0 0;
+  background-size: cover;
+  background-position: -6rem 0rem;
+  right: 0;
+}
+
+.Weapons .mobile-cat-selector .mobile-weapon-navigation-container li .link:hover,
+.home .mobile-cat-selector .mobile-weapon-navigation-container li .link:hover,
+.item-shop-container .mobile-cat-selector .mobile-weapon-navigation-container li .link:hover {
+  cursor: pointer;
+}
+
+.Weapons .mobile-menu-button,
+.home .mobile-menu-button,
+.item-shop-container .mobile-menu-button {
+  position: fixed;
+  top: 5.2rem;
+  right: 1rem;
+  z-index: 1;
+}
+
+.Weapons .mobile-menu-button:hover,
+.home .mobile-menu-button:hover,
+.item-shop-container .mobile-menu-button:hover {
+  cursor: pointer;
+}
+
+.Weapons .mobile-menu-button .icon,
+.home .mobile-menu-button .icon,
+.item-shop-container .mobile-menu-button .icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.Weapons .weapon-views,
+.home .weapon-views,
+.item-shop-container .weapon-views {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.322);
+  z-index: 1;
+  display: none;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper,
+.home .weapon-views .weapon-views-wrapper,
+.item-shop-container .weapon-views .weapon-views-wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview,
+.home .weapon-views .weapon-views-wrapper .weapon-preview,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview {
+  position: relative;
+  width: 96rem;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.2fr;
+      grid-template-columns: 1fr 1.2fr;
+  background: white;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__legendary .weapon-stats .rarity-image .rarity-tag,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__legendary .weapon-stats .rarity-image .rarity-tag,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__legendary .weapon-stats .rarity-image .rarity-tag {
+  background: #ffcc00;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__legendary .weapon-stats .rarity-image .rarity,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__legendary .weapon-stats .rarity-image .rarity,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__legendary .weapon-stats .rarity-image .rarity {
+  background: #ffcc00;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__epic .weapon-stats .rarity-image .rarity-tag,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__epic .weapon-stats .rarity-image .rarity-tag,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__epic .weapon-stats .rarity-image .rarity-tag {
+  background: #9900cc;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__epic .weapon-stats .rarity-image .rarity,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__epic .weapon-stats .rarity-image .rarity,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__epic .weapon-stats .rarity-image .rarity {
+  background: #9900cc;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__rare .weapon-stats .rarity-image .rarity-tag,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__rare .weapon-stats .rarity-image .rarity-tag,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__rare .weapon-stats .rarity-image .rarity-tag {
+  background: #0066ff;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__rare .weapon-stats .rarity-image .rarity,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__rare .weapon-stats .rarity-image .rarity,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__rare .weapon-stats .rarity-image .rarity {
+  background: #0066ff;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__uncommon .weapon-stats .rarity-image .rarity-tag,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__uncommon .weapon-stats .rarity-image .rarity-tag,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__uncommon .weapon-stats .rarity-image .rarity-tag {
+  background: #009900;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__uncommon .weapon-stats .rarity-image .rarity,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__uncommon .weapon-stats .rarity-image .rarity,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__uncommon .weapon-stats .rarity-image .rarity {
+  background: #009900;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__common .weapon-stats .rarity-image .rarity-tag,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__common .weapon-stats .rarity-image .rarity-tag,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__common .weapon-stats .rarity-image .rarity-tag {
+  background: grey;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview__common .weapon-stats .rarity-image .rarity,
+.home .weapon-views .weapon-views-wrapper .weapon-preview__common .weapon-stats .rarity-image .rarity,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview__common .weapon-stats .rarity-image .rarity {
+  background: grey;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-image,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-image,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-image {
+  margin: auto;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 30rem;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 0;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image div:not(:first-child),
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image div:not(:first-child),
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image div:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity {
+  width: 2rem;
+  height: 10rem;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .weapon-rarity-image,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .weapon-rarity-image,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .weapon-rarity-image {
+  width: 10rem;
+  height: 8rem;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag {
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-clip-path: polygon(88% 0, 100% 50%, 100% 50%, 88% 100%, 0 100%, 0 0);
+          clip-path: polygon(88% 0, 100% 50%, 100% 50%, 88% 100%, 0 100%, 0 0);
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag .rarity-description,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag .rarity-description,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag .rarity-description {
+  margin-left: 1.4rem;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: white;
+  margin-top: .3rem;
+  text-shadow: 1px 1px 0 black;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag::after,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag::after,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag::after {
+  content: '';
+  height: 8rem;
+  width: 2rem;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  margin-bottom: 4rem;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-name,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-name,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-name {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart {
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-name,
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-name,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-name,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (2rem)[7];
+      grid-template-rows: repeat(7, 2rem);
+  grid-gap: 1.4rem;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar {
+  margin-right: 2rem;
+  width: 60%;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar .container,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar .container,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar .container {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar .status-bar,
+.home .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar .status-bar,
+.item-shop-container .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar .status-bar {
+  height: 2rem;
+  max-width: 100%;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .close-btn,
+.home .weapon-views .weapon-views-wrapper .close-btn,
+.item-shop-container .weapon-views .weapon-views-wrapper .close-btn {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  color: black;
+  background: rgba(105, 104, 104, 0.363);
+  border-radius: 50%;
+  top: 4rem;
+  right: 0rem;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .close-btn .icon,
+.home .weapon-views .weapon-views-wrapper .close-btn .icon,
+.item-shop-container .weapon-views .weapon-views-wrapper .close-btn .icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.Weapons .weapon-views .weapon-views-wrapper .close-btn:hover,
+.home .weapon-views .weapon-views-wrapper .close-btn:hover,
+.item-shop-container .weapon-views .weapon-views-wrapper .close-btn:hover {
+  cursor: pointer;
+}
+
+.Weapons .weapons-wrapper,
+.home .weapons-wrapper,
+.item-shop-container .weapons-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Weapons .weapons-wrapper .weapons-container,
+.home .weapons-wrapper .weapons-container,
+.item-shop-container .weapons-wrapper .weapons-container {
+  width: 108rem;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 2rem;
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container,
+.home .weapons-wrapper .weapons-container .weapon-container,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container {
+  width: 25%;
+  margin-bottom: 5rem;
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container li,
+.home .weapons-wrapper .weapons-container .weapon-container li,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container li .image,
+.home .weapons-wrapper .weapons-container .weapon-container li .image,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container li .image {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 10% 2% 10% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container li .image:hover,
+.home .weapons-wrapper .weapons-container .weapon-container li .image:hover,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container li .image:hover {
+  cursor: pointer;
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container li .image .image-container,
+.home .weapons-wrapper .weapons-container .weapon-container li .image .image-container,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container li .image .image-container {
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container li .image__legendary,
+.home .weapons-wrapper .weapons-container .weapon-container li .image__legendary,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container li .image__legendary {
+  background-color: #fbb034;
+  background-image: linear-gradient(135deg, #fbb034 0%, #ffdd00 90%);
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container li .image__epic,
+.home .weapons-wrapper .weapons-container .weapon-container li .image__epic,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container li .image__epic {
+  background-color: #a4508b;
+  background-image: linear-gradient(135deg, #5f0a87 0%, #a4508b 90%);
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container li .image__rare,
+.home .weapons-wrapper .weapons-container .weapon-container li .image__rare,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container li .image__rare {
+  background-color: #045de9;
+  background-image: linear-gradient(135deg, #045de9 0%, #09c6f9 90%);
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container li .image__uncommon,
+.home .weapons-wrapper .weapons-container .weapon-container li .image__uncommon,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container li .image__uncommon {
+  background-color: #00b712;
+  background-image: linear-gradient(135deg, #00b712 0%, #5aff15 90%);
+}
+
+.Weapons .weapons-wrapper .weapons-container .weapon-container li .image__common,
+.home .weapons-wrapper .weapons-container .weapon-container li .image__common,
+.item-shop-container .weapons-wrapper .weapons-container .weapon-container li .image__common {
+  background-color: #deebdd;
+  background-image: linear-gradient(135deg, #bbdbbe 0%, #deebdd 90%);
+}
+
+.item-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: radial-gradient(circle, #c2b86a 4%, #a06301 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.item-list .best-rated-bar {
+  width: 75%;
+  position: relative;
+  margin-top: 2rem;
+  width: 80%;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: #dbdbdb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-list .best-rated-bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  -webkit-clip-path: polygon(0 0, 94% 0, 100% 100%, 0 100%, 0% 38%);
+          clip-path: polygon(0 0, 94% 0, 100% 100%, 0 100%, 0% 38%);
+}
+
+.item-list .best-rated-bar__allitem::before {
+  width: 24rem;
+}
+
+.item-list .best-rated-bar h2 {
+  margin-left: 2rem;
+  margin-top: 3px;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+.item-list .best-4-item-container,
+.item-list .all-item {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.item-list .best-4-item-container .rating-icon,
+.item-list .all-item .rating-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5rem;
+  height: 5rem;
+  top: 0;
+  color: gold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-list .best-4-item-container .rating-icon .icon,
+.item-list .all-item .rating-icon .icon {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+}
+
+.item-list .best-4-item-container .rating-icon .icon-rating-number,
+.item-list .all-item .rating-icon .icon-rating-number {
+  margin-top: .9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  -webkit-text-stroke: .2px white;
+  color: black;
+  font-size: 2.4rem;
+  z-index: 1;
+}
+
+.item-list .best-4-item-container .item-item,
+.item-list .all-item .item-item {
+  margin: 2rem 2rem;
+  position: relative;
+  overflow: hidden;
+  width: 36rem;
+  height: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 1%;
+}
+
+.item-list .best-4-item-container .item-item__legendary,
+.item-list .all-item .item-item__legendary {
+  background: radial-gradient(circle, #ede28b 4%, #db8700 100%);
+  border: 5px solid #fc983b;
+}
+
+.item-list .best-4-item-container .item-item__legendary .item-name,
+.item-list .best-4-item-container .item-item__legendary .item-type,
+.item-list .all-item .item-item__legendary .item-name,
+.item-list .all-item .item-item__legendary .item-type {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff7300), color-stop(40%, #efecff), color-stop(50%, white), color-stop(80%, #e9e6ff), to(#ff7b00));
+  background: linear-gradient(0deg, #ff7300 0%, #efecff 40%, white 50%, #e9e6ff 80%, #ff7b00 100%);
+}
+
+.item-list .best-4-item-container .item-item__epic,
+.item-list .all-item .item-item__epic {
+  background: radial-gradient(circle, #ffa4f0 4%, #d400db 100%);
+  border: 5px solid #fc3bfc;
+}
+
+.item-list .best-4-item-container .item-item__epic .item-name,
+.item-list .best-4-item-container .item-item__epic .item-type,
+.item-list .all-item .item-item__epic .item-name,
+.item-list .all-item .item-item__epic .item-type {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff00dd), color-stop(40%, #efecff), color-stop(50%, white), color-stop(80%, #e9e6ff), to(#e100ff));
+  background: linear-gradient(0deg, #ff00dd 0%, #efecff 40%, white 50%, #e9e6ff 80%, #e100ff 100%);
+}
+
+.item-list .best-4-item-container .item-item__rare,
+.item-list .all-item .item-item__rare {
+  background: radial-gradient(circle, #77c4ec 21%, #006cff 100%);
+  border: 5px solid #0fa8fa;
+}
+
+.item-list .best-4-item-container .item-item__rare .item-name,
+.item-list .best-4-item-container .item-item__rare .item-type,
+.item-list .all-item .item-item__rare .item-name,
+.item-list .all-item .item-item__rare .item-type {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8b77ff), color-stop(40%, #efecff), color-stop(50%, white), color-stop(80%, #e9e6ff), to(#9886ff));
+  background: linear-gradient(0deg, #8b77ff 0%, #efecff 40%, white 50%, #e9e6ff 80%, #9886ff 100%);
+}
+
+.item-list .best-4-item-container .item-item__uncommon,
+.item-list .all-item .item-item__uncommon {
+  background: radial-gradient(circle, #77ecc4 15%, #00d10a 100%);
+  border: 5px solid #0ffa4a;
+}
+
+.item-list .best-4-item-container .item-item__uncommon .item-name,
+.item-list .best-4-item-container .item-item__uncommon .item-type,
+.item-list .all-item .item-item__uncommon .item-name,
+.item-list .all-item .item-item__uncommon .item-type {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8bff77), color-stop(40%, #efecff), color-stop(50%, white), color-stop(80%, #e9e6ff), to(#98ff77));
+  background: linear-gradient(0deg, #8bff77 0%, #efecff 40%, white 50%, #e9e6ff 80%, #98ff77 100%);
+}
+
+.item-list .best-4-item-container .item-item__common,
+.item-list .all-item .item-item__common {
+  background: lightgrey;
+}
+
+.item-list .best-4-item-container .item-item .item-image,
+.item-list .all-item .item-item .item-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-size: 100%;
+}
+
+.item-list .best-4-item-container .item-item .item-description,
+.item-list .all-item .item-item .item-description {
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-list .best-4-item-container .item-item .item-description .item-name,
+.item-list .all-item .item-item .item-description .item-name {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+
+.item-list .best-4-item-container .item-item .item-description .item-type,
+.item-list .all-item .item-item .item-description .item-type {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .5px black;
+}
+
+.item-list .best-4-item-container .item-item .item-description .price-container,
+.item-list .all-item .item-item .item-description .price-container {
+  margin-top: 2rem;
+  width: 100%;
+  height: 4.6rem;
+  background: #010138;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-list .best-4-item-container .item-item .item-description .price-container .vbucks-icon,
+.item-list .all-item .item-item .item-description .price-container .vbucks-icon {
+  width: 3rem;
+  height: 3rem;
+  background: url("../pict/V-bucks_icon.png") no-repeat;
+  background-size: cover;
+}
+
+.item-list .best-4-item-container .item-item .item-description .price-container .price,
+.item-list .all-item .item-item .item-description .price-container .price {
+  letter-spacing: 3px;
+  margin-left: 1rem;
+  margin-top: 2px;
+  font-size: 3rem;
+  color: white;
+}
+
+.item-list .all-item {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-list .all-item .item-item {
+  margin: 2rem 1rem;
+  width: 32rem;
+  height: 36rem;
+}
+
+.item-list .all-item .item-item .item-description {
+  max-height: 40%;
+}
+
+.item-list .all-item .item-item .item-description .item-name {
+  font-size: 3rem;
+}
+
+.item-list .all-item .item-item .item-description .price-container {
+  height: 4rem;
+}
+
+.weapon-category-selector-wrapper .weapon-category-selector,
+.weapon-category-selector-wrapper .mobile-weapon-category-selector,
+.rarity-selector .weapon-category-selector,
+.rarity-selector .mobile-weapon-category-selector {
+  width: 100%;
+  background: lime;
+  margin-bottom: 3rem;
+}
+
+.weapon-category-selector-wrapper .weapon-category-selector h1,
+.weapon-category-selector-wrapper .mobile-weapon-category-selector h1,
+.rarity-selector .weapon-category-selector h1,
+.rarity-selector .mobile-weapon-category-selector h1 {
+  font-size: 3rem;
+}
+
+.weapon-category-selector-wrapper .weapon-category-selector .category-selector-container,
+.weapon-category-selector-wrapper .mobile-weapon-category-selector .category-selector-container,
+.rarity-selector .weapon-category-selector .category-selector-container,
+.rarity-selector .mobile-weapon-category-selector .category-selector-container {
+  margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.weapon-category-selector-wrapper .weapon-category-selector .category-selector-container .category-wrapper,
+.weapon-category-selector-wrapper .mobile-weapon-category-selector .category-selector-container .category-wrapper,
+.rarity-selector .weapon-category-selector .category-selector-container .category-wrapper,
+.rarity-selector .mobile-weapon-category-selector .category-selector-container .category-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.weapon-category-selector-wrapper .weapon-category-selector .category-selector-container input,
+.weapon-category-selector-wrapper .mobile-weapon-category-selector .category-selector-container input,
+.rarity-selector .weapon-category-selector .category-selector-container input,
+.rarity-selector .mobile-weapon-category-selector .category-selector-container input {
+  width: 2rem;
+  height: 2rem;
+}
+
+.weapon-category-selector-wrapper .weapon-category-selector .category-selector-container .category-container,
+.weapon-category-selector-wrapper .mobile-weapon-category-selector .category-selector-container .category-container,
+.rarity-selector .weapon-category-selector .category-selector-container .category-container,
+.rarity-selector .mobile-weapon-category-selector .category-selector-container .category-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.weapon-category-selector-wrapper .weapon-category-selector .category-selector-container .category-container > *,
+.weapon-category-selector-wrapper .mobile-weapon-category-selector .category-selector-container .category-container > *,
+.rarity-selector .weapon-category-selector .category-selector-container .category-container > *,
+.rarity-selector .mobile-weapon-category-selector .category-selector-container .category-container > * {
+  margin: .5rem;
+}
+
+.weapon-category-selector-wrapper .weapon-category-selector .category-selector-container .category-button,
+.weapon-category-selector-wrapper .mobile-weapon-category-selector .category-selector-container .category-button,
+.rarity-selector .weapon-category-selector .category-selector-container .category-button,
+.rarity-selector .mobile-weapon-category-selector .category-selector-container .category-button {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.336);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  width: 8rem;
+  height: 4.2rem;
+  margin: 1rem 0;
+  border-radius: 5%;
+}
+
+.weapon-category-selector-wrapper .weapon-category-selector .category-selector-container .category-button:hover,
+.weapon-category-selector-wrapper .mobile-weapon-category-selector .category-selector-container .category-button:hover,
+.rarity-selector .weapon-category-selector .category-selector-container .category-button:hover,
+.rarity-selector .mobile-weapon-category-selector .category-selector-container .category-button:hover {
+  cursor: pointer;
+}
+
+.rarity-selector {
+  width: 100%;
+}
+
+.rarity-selector .mobile-weapon-category-selector .category-selector-container {
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rarity-selector .mobile-weapon-category-selector .category-selector-container .category-wrapper {
+  width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+  .home .banner-container .banner-image {
+    height: 50vw;
+  }
+  .home .body-main-content .main-content-coursel {
+    width: 100%;
+  }
+  .home .body-main-content .main-content-coursel .coursel-container {
+    width: 84%;
+  }
+  .home .body-main-content .main-content-coursel .coursel-container .coursel-slider {
+    height: 50vw;
+  }
+  .home .body-main-content .main-content-coursel .coursel-container .coursel-slider .coursel-image {
+    background-attachment: center;
+    background-size: cover;
+  }
+  .Weapons .weapons-wrapper .weapons-container {
+    width: 95%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Weapons .weapons-wrapper .weapons-container .weapon-container {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Weapons .weapons-wrapper .weapons-container .weapon-container {
+    width: 30%;
+  }
+  .Weapons .weapons-wrapper .weapons-container .weapon-container li .image {
+    width: 18rem;
+    height: 18rem;
+  }
+  .Weapons .weapons-wrapper .weapons-container .weapon-container li .image .image-container {
+    width: 15rem;
+    height: 15rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview {
+    width: 60%;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    border-radius: 10% 2% 10% 2%;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-image {
+    width: 20rem;
+    height: 20rem;
+    background-repeat: no-repeat !important;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar {
+    margin-right: 0;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image {
+    margin: 2rem 0;
+    margin-left: 2.5rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats > * {
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home .banner-container .banner-image {
+    height: 50vw;
+  }
+  .home .banner-container .banner-image .banner-btn-get-started {
+    top: 72%;
+  }
+  .home .banner-container .banner-image .banner-btn {
+    display: none;
+  }
+  .home .body-main-content {
+    margin-top: 5rem;
+  }
+  .home .body-main-content .main-content-text {
+    width: 80%;
+  }
+  .home .body-main-content .main-content-text h1 {
+    text-align: center;
+    font-size: 6rem;
+  }
+  .home .body-main-content .main-content-text p {
+    font-size: 1.8rem;
+  }
+  .home .body-main-content .main-content-coursel {
+    width: 100%;
+  }
+  .home .body-main-content .main-content-coursel .coursel-container {
+    width: 100%;
+  }
+  .home .body-main-content .main-content-coursel .coursel-container .coursel-slider {
+    height: 50vw;
+  }
+  .home .body-main-content .main-content-coursel .coursel-container .coursel-slider .coursel-image {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .home .banner-container .banner-image .banner-btn-get-started {
+    top: 72%;
+  }
+  .home .banner-container .banner-image .banner-btn {
+    display: none;
+  }
+  .home .body-main-content {
+    margin-top: 5rem;
+  }
+  .home .body-main-content .main-content-text {
+    width: 90%;
+  }
+  .home .body-main-content .main-content-text h1 {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .home .body-main-content .main-content-text p {
+    font-size: 1.6rem;
+  }
+  .home .body-main-content .main-content-coursel {
+    width: 100%;
+  }
+  .home .body-main-content .main-content-coursel .coursel-container {
+    width: 100%;
+  }
+  .home .body-main-content .main-content-coursel .coursel-container .coursel-slider .coursel-image {
+    background-position: center;
+    background-size: cover;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .home .banner-container .banner-image .banner-btn-get-started {
+    width: 50%;
+    height: 6rem;
+  }
+  .home .banner-container .banner-image .banner-btn-get-started h1 {
+    font-size: 3rem;
+    margin-top: 2%;
+  }
+  .banner-navbar .navbar-list {
+    display: none;
+  }
+  .Weapons .mobile-navigation,
+  .home .mobile-navigation,
+  .item-shop-container .mobile-navigation {
+    display: block;
+  }
+  .Weapons .weapon-category-selector,
+  .home .weapon-category-selector,
+  .item-shop-container .weapon-category-selector {
+    display: none;
+  }
+  .Weapons .weapons-wrapper .weapons-container,
+  .home .weapons-wrapper .weapons-container,
+  .item-shop-container .weapons-wrapper .weapons-container {
+    margin-top: 3rem;
+  }
+  .Weapons .weapons-wrapper .weapons-container .weapon-container,
+  .home .weapons-wrapper .weapons-container .weapon-container,
+  .item-shop-container .weapons-wrapper .weapons-container .weapon-container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image {
+    margin: 2rem 2rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity {
+    height: 8rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .weapon-rarity-image {
+    width: 6rem;
+    height: 6rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag .rarity-description {
+    font-size: 3rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-image {
+    margin: 0 auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 17rem;
+    height: 17rem;
+  }
+  .Weapons .weapons-wrapper .weapons-container .weapon-container {
+    width: 80%;
+    height: calc(75vw - 4rem);
+    margin-bottom: 2rem;
+  }
+  .Weapons .weapons-wrapper .weapons-container .weapon-container li .image {
+    width: 80%;
+    height: calc(57vw);
+  }
+  .Weapons .weapons-wrapper .weapons-container .weapon-container li .image .image-container {
+    width: 18rem;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .home .banner-container .banner-image {
+    height: 54vw;
+  }
+  .home .banner-container .banner-image .banner-btn-get-started {
+    width: 40%;
+    height: 5rem;
+  }
+  .home .banner-container .banner-image .banner-btn-get-started h1 {
+    font-size: 2.4rem;
+  }
+  .home .body-main-content .main-content-coursel .coursel-dot-slider {
+    width: 10rem;
+    height: 4rem;
+    bottom: -6.5rem;
+    margin-bottom: 1rem;
+  }
+  .home .body-main-content .main-content-text h1 {
+    font-size: 4rem;
+  }
+  .home .body-main-content .main-content-text p {
+    font-size: 1.4rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .close-btn {
+    top: 4rem;
+    right: -.1rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .close-btn .icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview {
+    height: auto;
+    width: 88%;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-image {
+    width: 17rem;
+    height: 17rem;
+    margin: 0;
+    background-position: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 auto;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .weapon-rarity-image {
+    margin-left: 1rem !important;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .rarity-image .rarity-tag {
+    margin-left: 1rem !important;
+    min-width: 40%;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-name {
+    font-size: 3rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart {
+    margin-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-name,
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar {
+    grid-gap: .4rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-name p,
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-name {
+    margin-right: 1rem;
+  }
+  .Weapons .weapon-views .weapon-views-wrapper .weapon-preview .weapon-stats .stats .weapon-chart .stat-bar {
+    margin-right: 0;
+  }
+}
+
+.mobile-navigation-bar-active li:nth-child(1) {
+  -webkit-animation: AnimateMobileNav 0.24s ease-in-out forwards;
+          animation: AnimateMobileNav 0.24s ease-in-out forwards;
+}
+
+.mobile-navigation-bar-active li:nth-child(2) {
+  -webkit-animation: AnimateMobileNav 0.48s ease-in-out forwards;
+          animation: AnimateMobileNav 0.48s ease-in-out forwards;
+}
+
+.mobile-navigation-bar-active li:nth-child(3) {
+  -webkit-animation: AnimateMobileNav 0.72s ease-in-out forwards;
+          animation: AnimateMobileNav 0.72s ease-in-out forwards;
+}
+
+.mobile-navigation-bar-active li:nth-child(4) {
+  -webkit-animation: AnimateMobileNav 0.96s ease-in-out forwards;
+          animation: AnimateMobileNav 0.96s ease-in-out forwards;
+}
+
+.mobile-navigation-bar-active li:nth-child(5) {
+  -webkit-animation: AnimateMobileNav 1.2s ease-in-out forwards;
+          animation: AnimateMobileNav 1.2s ease-in-out forwards;
+}
+
+.mobile-navigation-bar-active li:nth-child(6) {
+  -webkit-animation: AnimateMobileNav 1.44s ease-in-out forwards;
+          animation: AnimateMobileNav 1.44s ease-in-out forwards;
+}
+
+@-webkit-keyframes AnimateMobileNav {
+  0% {
+    margin-top: 5rem;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+  }
+}
+
+@keyframes AnimateMobileNav {
+  0% {
+    margin-top: 5rem;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

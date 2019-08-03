@@ -1,0 +1,1214 @@
+@font-face {
+    font-family: burbank;
+    src: url(./BurbankBigCondensed-Bold.otf);
+}
+
+@import url('./_animation.scss');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    position: relative;
+}
+
+.link {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+// Navigation
+.banner-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    font-family: burbank;
+    letter-spacing: 2px;
+
+    .banner-icon {
+        font-size: 2.4rem;
+        color: rgb(231, 231, 231);
+        width: 20%;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: black;
+
+        h2 {
+            margin-top: .7rem;
+        }
+    }
+
+    .navbar-list {
+        width: 50rem;
+        height: 7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: black;
+
+        li {
+            list-style-type: none;
+            margin: 0 2rem;
+            color: rgb(231, 231, 231);
+            font-size: 2.4rem;
+            text-transform: uppercase;
+
+            &:hover {
+                cursor: pointer;
+                color: white;
+            }
+        }
+
+        .fortnite-wrapper {
+            width: 18rem;
+            min-width: 18rem;
+            height: 100%;
+            text-decoration: none;
+
+            .play-fortnite {
+                margin: 0;
+                min-width: 18rem;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(90deg, rgba(251, 255, 74, 1) 0%, rgba(236, 255, 0, 1) 100%);
+                color: black;
+
+                &:hover {
+                    cursor: pointer;
+                    background: yellow;
+                    color: black;
+                }
+            }
+
+        }
+    }
+}
+
+// NavigationEnd
+
+.banner-container {
+    width: 100%;
+
+    .banner-image {
+        position: relative;
+        width: 100%;
+        height: 85vh;
+        background-image: url("https://cdn2.unrealengine.com/Fortnite%2Fbattle-royale%2F09BP_Web_GetFornitePage_3UPMain-1920x1000-f8c6eabdf58b43b779e5762693908748572e6cb0.jpg");
+        background-size: cover;
+        background-position: center;
+
+        .banner-btn-get-started {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 60%;
+            left: 50%;
+            width: 38rem;
+            height: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: yellow;
+            font-size: 2rem;
+            border-radius: 2%;
+            letter-spacing: 2px;
+            box-shadow: 0rem .5rem 2rem .1rem black;
+
+            h1 {
+                margin-top: 3%;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .banner-btn-secret-shop {
+            width: 40rem;
+            height: 12rem;
+            transform: translate(-100%, 50%);
+            position: absolute;
+            bottom: 0;
+            left: 49.9%;
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, rgba(171, 195, 232, 1) 0%, rgba(0, 82, 255, 1) 65%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -.5rem .5rem 2rem .2rem black;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            h1 {
+                margin-top: 3%;
+            }
+        }
+
+        .banner-btn-weapon-stats {
+            width: 40rem;
+            height: 12rem;
+            transform: translate(0%, 50%);
+            position: absolute;
+            bottom: 0;
+            font-size: 2.5rem;
+            left: 50.1%;
+            background: linear-gradient(to left, rgb(228, 232, 171) 0%, rgb(251, 255, 0) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: .5rem .5rem 2rem .2rem black;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            h1 {
+                margin-top: 3%;
+            }
+
+        }
+    }
+}
+
+// Home
+.home {
+    width: 100%;
+    font-family: burbank, sans-serif;
+    letter-spacing: 2px;
+
+    .body-main-content {
+        margin-top: 14rem;
+        width: 100%;
+        min-height: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main-content-text {
+            width: 70rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5rem;
+
+            h1 {
+                font-size: 8rem;
+                color: rgb(0, 140, 255);
+                letter-spacing: 6px;
+            }
+
+            p {
+                font-size: 2rem;
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+
+                span {
+                    color: blue;
+                    font-weight: bold;
+
+                    a {
+                        text-decoration: none;
+
+                        &:visited {
+                            color: blue;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .main-content-coursel {
+            position: relative;
+            width: 110rem;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5rem;
+
+            .button-right {
+                transform: translateY(-50%);
+                top: 50%;
+                right: 1%;
+                position: absolute;
+            }
+
+            .button-left {
+                transform: translateY(-50%);
+                top: 50%;
+                left: 1%;
+                position: absolute;
+            }
+
+            .icon {
+                color: rgb(0, 140, 255);
+
+                &:hover {
+                    cursor: pointer;
+                    color: rgb(0, 60, 255);
+                }
+
+                &__left {
+                    width: 5rem;
+                    height: 5rem;
+                }
+
+                &__right {
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+
+            .coursel-container {
+                width: 80%;
+                position: relative;
+                overflow: hidden;
+
+                .coursel-slider {
+                    width: 100%;
+                    height: 54rem;
+                    margin: 0 auto;
+                    color: white;
+                    display: grid;
+                    transform: translateX(-100%);
+                    grid-template-columns: repeat(6, 100%);
+
+                    .coursel-image {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        h1 {
+                            margin-top: 1rem;
+                            font-size: 4em;
+                            color: white;
+                        }
+
+                        &__1 {
+                            background: url("https://cdn2.unrealengine.com/Fortnite%2Fbattle-royale%2Ffortnite-sniper-1920x1080-f072fcef414cbe680e369a16a8d059d8a01c7636.jpg");
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        &__2 {
+                            background: url("https://cdn2.unrealengine.com/Fortnite%2Fbattle-royale%2Ffortnite-battleroyaleapproved-1920x1080-70139076a5efcf08da47c9bbbb824ebc5a10310e.jpg");
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        &__3 {
+                            background-image: url(https://cdn2.unrealengine.com/Fortnite%2FCreativeMode%2FcreativeMode-1920x1080-a1dce90f226f2234dbdb524a122db63f2342165e.jpg);
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+                }
+
+            }
+
+            .coursel-dot-slider {
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 20rem;
+                height: 8rem;
+                bottom: -8rem;
+
+                .icon {
+                    width: 2.1rem;
+                    height: 2.1rem;
+                    opacity: .4;
+                    list-style-type: none;
+                }
+
+                .circle-active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
+
+// Home.End
+
+// Weapon Main
+.Weapons,
+.home {
+    font-family: burbank, sans-serif;
+
+    .mobile-navigation {
+        display: none;
+    }
+
+    .mobile-cat-selector {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(128, 128, 128);
+        z-index: 2;
+        display: none;
+
+        .navigation-bar {
+            width: 100%;
+            height: 5rem;
+            background: black;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .close-button {
+                margin-right: 1rem;
+                margin-top: 5px;
+                font-size: 4rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .mobile-weapon-navigation-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            li {
+                position: relative;
+                width: 100%;
+                height: 14rem;
+
+                .link {
+                    font-size: 3rem;
+                    color: black;
+
+                    h2 {
+                        float: left;
+                        margin: 1rem 0 0 1rem;
+                    }
+
+                    .home-mobile-nav {
+                        height: 100%;
+                        background: linear-gradient(to top, #fad551 0%, #fcac19 100%);
+
+                        &::before {
+                            content: '';
+                            transform: rotateY(180deg);
+                            position: absolute;
+                            width: 14rem;
+                            height: 14rem;
+                            background: url("https://fortnite-public-files.theapinetwork.com/outfit/5b0a79359f5aea11b7eb81e5ce995a10.png") no-repeat 0 0;
+                            background-size: cover;
+                            background-position: -1rem;
+                            right: 0;
+                        }
+                    }
+
+                    .shop-mobile-nav {
+                        height: 100%;
+                        background: linear-gradient(to top, #11c6e2 0%, #0470dc 100%);
+
+                        &::before {
+                            content: '';
+                            transform: rotateY(180deg);
+                            position: absolute;
+                            width: 28rem;
+                            height: 14rem;
+                            background: url("../pict/Character/Home.png") no-repeat 0 0;
+                            background-size: cover;
+                            background-position: -6rem 0rem;
+                            right: 0;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .mobile-menu-button {
+        position: fixed;
+        top: 5.2rem;
+        right: 1rem;
+        z-index: 1;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .icon {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    .weapon-views {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.322);
+        z-index: 1;
+        display: none;
+
+
+        .weapon-views-wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .weapon-preview {
+                position: relative;
+                width: 96rem;
+                height: 51rem;
+                background-size: cover;
+                display: grid;
+                grid-template-columns: 1fr 1.2fr;
+
+                .weapon-image {
+                    margin: auto;
+                    background-repeat: no-repeat;
+                    width: 80%;
+                    height: 70%;
+                }
+
+
+                &__legendary {
+                    background: url('../pict/legendary-background.jpg') no-repeat;
+                    background-size: 100%;
+                }
+
+                &__epic {
+                    background: url("../pict/epic-background.jpg") no-repeat;
+                    background-size: 100%;
+                }
+
+                &__rare {
+                    background: url("../pict/rare-background.jpg") no-repeat;
+                    background-size: 100%;
+                }
+
+                &__uncommon {
+                    background: url("../pict/white.jpg") no-repeat;
+                    background-size: 100%;
+                }
+
+                &__common {
+                    background: url("../pict/white.jpg") no-repeat;
+                    background-size: 100%;
+                }
+
+
+                .weapon-stats {
+                    height: 100%;
+                    display: grid;
+                    grid-template-rows: 1fr 3fr;
+
+                    .stats {
+                        grid-row: 2/3;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .weapon-name {
+                            font-size: 4rem;
+                            letter-spacing: 3px;
+                            color: white;
+                        }
+
+                        .weapon-chart {
+                            width: 100%;
+                            margin-top: 2rem;
+                            color: white;
+                            font-size: 2.4rem;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .stat-name,
+                            .stat-bar {
+                                display: grid;
+                                grid-row: repeat(7, 1fr);
+                                grid-gap: 1.4rem;
+                            }
+
+                            .stat-bar {
+                                margin-right: 2rem;
+                                width: 60%;
+
+                                .container {
+                                    width: 100%;
+                                    height: 100%;
+                                    background: white;
+                                }
+
+                                .status-bar {
+                                    height: 100%;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .close-btn {
+                transform: translate(-50%, -50%);
+                position: absolute;
+                color: black;
+                background: rgba(105, 104, 104, 0.363);
+                border-radius: 50%;
+                top: 4rem;
+                right: 0rem;
+
+                .icon {
+                    width: 5rem;
+                    height: 5rem;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .weapons-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .weapons-container {
+            width: 108rem;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 2rem;
+
+            .weapon-container {
+                width: 25%;
+                margin-bottom: 5rem;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 1.6rem;
+
+                    .image {
+                        width: 25rem;
+                        height: 25rem;
+                        border-radius: 10% 2% 10% 2%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        .image-container {
+                            background-size: cover;
+                            width: 20rem;
+                            height: 20rem;
+                            border-radius: 50%;
+                            background-position: center;
+                        }
+
+                        &__legendary {
+                            background-color: #fbb034;
+                            background-image: linear-gradient(135deg, #fbb034 0%, #ffdd00 90%);
+                        }
+
+                        &__epic {
+                            background-color: #a4508b;
+                            background-image: linear-gradient(135deg, #5f0a87 0%, #a4508b 90%);
+
+                        }
+
+                        &__rare {
+                            background-color: #045de9;
+                            background-image: linear-gradient(135deg, #045de9 0%, #09c6f9 90%);
+
+                        }
+
+                        &__uncommon {
+                            background-color: #00b712;
+                            background-image: linear-gradient(135deg, #00b712 0%, #5aff15 90%);
+                        }
+
+                        &__common {
+                            background-color: #deebdd;
+                            background-image: linear-gradient(135deg, #bbdbbe 0%, #deebdd 90%);
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}
+
+// Weapon MainEnd
+
+.weapon-category-selector-wrapper,
+.rarity-selector {
+
+    .weapon-category-selector,
+    .mobile-weapon-category-selector {
+        width: 100%;
+        background: rgb(0, 255, 0);
+        margin-bottom: 3rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .category-selector-container {
+            margin: auto;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .category-wrapper {
+                display: flex;
+                width: 70%;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            input {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .category-container {
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                font-size: 2rem;
+
+                &>* {
+                    margin: .5rem;
+                }
+            }
+
+            .category-button {
+                background: white;
+                border: 1px solid rgba(0, 0, 0, 0.336);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                width: 8rem;
+                height: 4.2rem;
+                margin: 1rem 0;
+                border-radius: 5%;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+.rarity-selector {
+    width: 100%;
+
+    .mobile-weapon-category-selector {
+        .category-selector-container {
+            width: 90%;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .category-wrapper {
+                width: auto;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1100px) {
+    .home {
+        .banner-container {
+            .banner-image {
+                height: 50vw;
+            }
+        }
+
+        .body-main-content {
+            .main-content-coursel {
+                width: 100%;
+
+                .coursel-container {
+                    width: 84%;
+
+                    .coursel-slider {
+                        height: 50vw;
+
+                        .coursel-image {
+                            background-attachment: center;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Weapons {
+        .weapons-wrapper {
+            .weapons-container {
+                width: 95%;
+                justify-content: center;
+
+                .weapon-container {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .Weapons {
+        .weapons-wrapper {
+            .weapons-container {
+                .weapon-container {
+                    width: 30%;
+
+                    li {
+                        .image {
+                            width: 18rem;
+                            height: 18rem;
+
+                            .image-container {
+                                width: 15rem;
+                                height: 15rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Weapons {
+        .weapon-views {
+            .weapon-views-wrapper {
+                .weapon-preview {
+                    height: 70vh;
+                    width: 60%;
+                    grid-template-columns: none;
+                    grid-template-rows: 1fr 1.2fr;
+                    border-radius: 10% 2% 10% 2%;
+
+                    &__legendary {
+                        background: linear-gradient(135deg, #f9c554 0%, #f77924 100%);
+                    }
+
+                    &__epic {
+                        background: linear-gradient(135deg, #C56CD6 0%, #633cbb 100%);
+                    }
+
+                    &__rare {
+                        background: linear-gradient(135deg, #0fd6f5 0%, #0470dc 100%);
+                    }
+
+                    &__uncommon {
+                        background: linear-gradient(135deg, #E3E3E3 0%, #5D6874 100%);
+                    }
+
+                    &__common {
+                        background: linear-gradient(135deg, #E3E3E3 0%, #5D6874 100%);
+                    }
+
+                    .weapon-image {
+                        width: 20rem;
+                        height: 20rem;
+                    }
+
+                    .weapon-stats {
+                        display: flex;
+                        justify-content: center;
+
+                        .stats {
+                            width: 90%;
+
+                            &>* {
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .home {
+
+        .banner-container {
+            .banner-image {
+                height: 50vw;
+
+                .banner-btn-get-started {
+                    top: 72%;
+                }
+
+                .banner-btn {
+                    display: none;
+                }
+            }
+        }
+
+        .body-main-content {
+            margin-top: 5rem;
+
+            .main-content-text {
+                width: 80%;
+
+                h1 {
+                    text-align: center;
+                    font-size: 6rem;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .main-content-coursel {
+                width: 100%;
+
+                .coursel-container {
+                    width: 100%;
+
+                    .coursel-slider {
+                        height: 50vw;
+
+                        .coursel-image {
+                            background-position: center;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 720px) {
+    .home {
+
+        .banner-container {
+
+            .banner-image {
+
+                .banner-btn-get-started {
+                    top: 72%;
+                }
+
+                .banner-btn {
+                    display: none;
+                }
+            }
+        }
+
+        .body-main-content {
+            margin-top: 5rem;
+
+            .main-content-text {
+                width: 90%;
+
+                h1 {
+                    text-align: center;
+                    font-size: 5rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .main-content-coursel {
+                width: 100%;
+
+                .coursel-container {
+                    width: 100%;
+
+                    .coursel-slider {
+                        // margin-bottom: 5%;
+
+                        .coursel-image {
+                            background-position: center;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Weapons {
+        .weapon-views {
+            .weapon-views-wrapper {
+                .weapon-preview {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home {
+        .banner-container {
+            .banner-image {
+                .banner-btn-get-started {
+                    width: 50%;
+                    height: 6rem;
+
+                    h1 {
+                        font-size: 3rem;
+                        margin-top: 2%;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-navbar {
+
+        .navbar-list {
+            display: none;
+        }
+    }
+
+    .Weapons {
+        margin-top: 3rem;
+    }
+
+    .Weapons,
+    .home {
+
+        .mobile-navigation {
+            display: block;
+        }
+
+        .weapon-category-selector {
+            display: none;
+        }
+
+        .weapons-wrapper {
+            .weapons-container {
+                .weapon-container {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 520px) {
+    .Weapons {
+        .weapon-views {
+            .weapon-views-wrapper {
+                .weapon-preview {
+                    .weapon-image {
+                        margin: 0 auto;
+                        align-self: center;
+                        width: 17rem;
+                        height: 17rem;
+                    }
+                }
+            }
+        }
+
+        .weapons-wrapper {
+            .weapons-container {
+                .weapon-container {
+                    width: 80%;
+                    height: calc(75vw - 4rem);
+                    margin-bottom: 2rem;
+
+                    li {
+                        .image {
+                            width: 80%;
+                            height: calc(57vw);
+
+                            .image-container {
+                                width: 18rem;
+                                height: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .home {
+        .banner-container {
+            .banner-image {
+                height: 54vw;
+
+                .banner-btn-get-started {
+                    width: 40%;
+                    height: 5rem;
+
+                    h1 {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+
+        .body-main-content {
+
+            .main-content-coursel {
+                .coursel-dot-slider {
+                    width: 10rem;
+                    height: 4rem;
+                    bottom: -6.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .main-content-text {
+                h1 {
+                    font-size: 4rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .Weapons {
+        .weapon-views {
+            .weapon-views-wrapper {
+                .close-btn {
+                    top: 5%;
+                    right: -1%;
+
+                    .icon {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+
+                .weapon-preview {
+                    height: auto;
+                    grid-template-rows: 22rem 28rem;
+
+                    .weapon-image {
+                        width: 17rem;
+                        height: 17rem;
+                        margin: 0;
+                        background-position: center;
+                        align-self: center;
+                        margin: 0 auto;
+                    }
+
+                    .weapon-stats {
+                        .stats {
+                            width: 90%;
+
+                            .weapon-name {
+                                font-size: 3rem;
+                            }
+
+                            .weapon-chart {
+                                height: 26rem;
+                                margin-top: 1rem;
+                                font-size: 2rem;
+                                letter-spacing: 1px;
+                                margin-bottom: 2rem;
+
+                                .stat-name,
+                                .stat-bar {
+                                    grid-gap: .4rem;
+                                }
+
+                                .stat-name {
+                                    margin-right: 1rem;
+                                }
+
+                                .stat-bar {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mobile-navigation-bar-active {
+
+    li {
+        @for $i from 1 through 6 {
+            &:nth-child(#{$i}) {
+                animation: AnimateMobileNav (.2s * $i * 1.2) ease-in-out forwards;
+            }
+        }
+    }
+}
+
+@keyframes AnimateMobileNav {
+    0% {
+        margin-top: 5rem;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0rem;
+    }
+}
